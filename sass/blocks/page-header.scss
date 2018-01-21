@@ -1,0 +1,27 @@
+.page-header {
+  color: $secondary-color;
+  background-color: $primary-color;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 20px 30px 25px 30px;
+
+  border-bottom: 1px solid black;
+}
+
+.page-header__main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header__main-nav-link {
+  display: block;
+  padding: 20px 30px;
+
+  color: $secondary-color;
+  text-decoration: none;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}

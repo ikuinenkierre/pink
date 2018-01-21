@@ -87,8 +87,10 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"])
+    .on('change', server.reload);;
+  gulp.watch("*.html", ["html"])
+    .on('change', server.reload);
 });
 
 gulp.task("build", function (done) {

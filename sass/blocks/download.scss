@@ -1,0 +1,18 @@
+.download {
+  color: $secondary-color;
+  
+  background-image: url("../img/download-bg.jpg");
+  background-color: $primary-color;
+}
+
+.download__apple-button {
+  background-image: url("../img/apple-logo.svg")
+}
+
+.download__adroid-button {
+  background-image: url("../img/android-logo.svg")
+}
+
+.download__windows-button {
+  background-image: url("../img/microsoft-logo.svg")
+}

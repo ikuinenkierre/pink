@@ -1,5 +1,19 @@
 .btn {
+  padding: 14px 16px 16px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
   color: $secondary-color;
+  text-decoration: none;
   background-color: transparent;
-  border: 5px solid $secondary-color;
+  border: 3px solid $secondary-color;
+  border-radius: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .btn {
+    font-size: 21px;
+  }
 }

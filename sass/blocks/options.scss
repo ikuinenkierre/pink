@@ -1,0 +1,277 @@
+.options {
+  position: relative;
+
+  background-color: #f2f2f2;
+}
+
+.options::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: -8vw;
+  width: 0;
+  height: 0;
+  border-bottom: 8vw solid #f2f2f2;
+  border-left: 100vw solid transparent;
+}
+
+.options__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 42px;
+  overflow: hidden;
+}
+
+.options__table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 840px;
+  margin-bottom: 33px;
+
+  text-transform: uppercase;
+
+  th {
+    width: 275px;
+  }
+
+  .options__table-heading--empty {
+    width: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  td {
+    box-sizing: border-box;
+
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.options__table-heading {
+  position: relative;
+  overflow:hidden;
+
+  color: $secondary-color;
+  background-color: $primary-color;
+  border-left: 2px solid  #e5e5e5;
+  border-right: 2px solid  #e5e5e5;
+}
+
+.options__table-heading--hit::before {
+  content: "Хит";
+  position: absolute;
+  width: 91px;
+  height: 29px;
+  top: 5px;
+  left: -37px;
+  padding-left: 42px;
+  transform: rotate(-45deg);
+  
+  text-align: left;
+  line-height: 29px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.options__title {
+  margin-top: 15px;
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.options__price {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.options__switcher {
+  display: none;
+}
+
+#option-1:checked ~ .options__table {
+  transform: translateX(280px);
+  transition: .5s;
+}
+
+#option-2:checked ~ .options__table {
+  transform: translateX(0);
+  transition: .5s;
+}
+
+#option-3:checked ~ .options__table {
+  transform: translateX(-280px);
+  transition: .5s;
+}
+
+#option-1:checked ~ .options__labels label[for="option-1"],
+#option-2:checked ~ .options__labels label[for="option-2"],
+#option-3:checked ~ .options__labels label[for="option-3"] {
+  background-color: $secondary-color;
+  border: 3px solid $primary-color;
+}
+
+.options__table .options__table-cell {
+  width: 280px;
+  padding: 18px 20px 17px;
+}
+
+.options__firts-row .options__table-cell {
+  border-top: none;
+}
+
+.options__table .options__table-cell--toggle {
+  width: 0;
+  padding: 0;
+
+  font-size: 0;
+  border: 0;
+}
+
+.options__table-cell--yes {
+  background-image: url(../../img/yes-icon.svg);
+  background-repeat: no-repeat;
+  background-position: top 20px right 20px;
+}
+
+.options__table-cell--no {
+  background-image: url(../../img/no-icon.svg);
+  background-repeat: no-repeat;
+  background-position: top 14px right 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .options__wrapper {
+    padding-top: 36px;
+    padding-bottom: 37px;
+  }
+
+  .options__table {
+    width: 620px;
+  }
+
+  .options__table th,
+  .options__table td {
+    width: 151px;
+  }
+
+  .options__table .options__table-heading--empty {
+    width: 151px;
+  }
+
+  .options__table-heading--hit::before {
+    left: -58px;
+    padding-left: 65px;
+  }
+
+  .options__table td {
+    background-color: $secondary-color;
+  }
+
+  .options__table td:not(:first-child) {
+    font-size: 0;
+  }
+
+  .options__table .options__table-cell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .options__table .options__table-cell--toggle {
+    width: 151px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 14px;
+    text-transform: none;
+    border: 2px solid #e5e5e5;
+  }
+
+  .options__title {
+    margin-top: 14px;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .options__price {
+    margin-bottom: 9px;
+
+    font-size: 18px;
+  }
+
+  .options__table-cell--yes {
+    background-position: center center;
+  }
+
+  .options__table-cell--no {
+    background-position: center center;
+  }
+
+  .options__labels {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options::before {
+    top: -7vw;
+    border-bottom-width: 7vw;
+  }
+
+  .options__wrapper {
+    padding-top: 74px;
+    padding-bottom: 94px;
+  }
+
+  .options__table {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .options__title {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .options__price {
+    margin-bottom: 19px;
+
+    font-size: 24px;
+  }
+
+  .options__table-heading--hit::before {
+    left: -35px;
+    padding-left: 44px;
+  }
+
+  .options__table .options__table-cell--toggle {
+    padding-left: 22px;
+    padding-right: 15px;
+
+    font-size: 18px;
+  }
+
+  .options__table .options__table-cell {
+    padding-top: 16px;
+    padding-bottom: 19px;
+  }
+}
+
+
+
+
+
+ 

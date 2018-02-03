@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -28,6 +29,12 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("js", function() {
+  return gulp.src("js/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
@@ -88,7 +95,9 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"])
-    .on('change', server.reload);;
+    .on('change', server.reload);
+  gulp.watch("js/**/*.js", ["js"])
+    .on('change', server.reload);
   gulp.watch("*.html", ["html"])
     .on('change', server.reload);
 });

@@ -1,27 +1,146 @@
 .page-header {
+  position: relative;
+  height: 69px;
+  z-index: 10;
+
   color: $secondary-color;
-  background-color: $primary-color;
+}
+
+.page-header__nav {
+  box-sizing: border-box;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__logo {
+  box-sizing: border-box;
   display: block;
-  padding: 20px 30px 25px 30px;
-
-  border-bottom: 1px solid black;
+  padding: 22px 20px 14px 20px;
+  
+  background-color: rgba(29, 38, 49, .3);  
 }
 
 .page-header__main-nav {
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  width: 320px;
+  height: 620px;
+  top: 67px;
+  left: 0;
+  z-index: 10;
+}
+
+.page-header__nav--open .page-header__main-nav {
+  display: block;
+}
+
+.page-header__nav--open .page-header__logo {
+  background-color: $primary-color;
+  border-bottom: 1px solid black;
+}
+
+.page-header__main-nav--no-js {
+  display: block;
+  position: static;
+}
+
+.page-header__toggle {
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 21px;
+  right: 20px;
+
+  background-color: transparent;
+  background-image: url(../../img/burger-icon.svg);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.page-header__toggle--closed {
+  background-image: url(../../img/close-menu-icon.svg);
+  width: 24px;
 }
 
 .page-header__main-nav-link {
   display: block;
-  padding: 20px 30px;
+  padding: 15px;
 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
   color: $secondary-color;
   text-decoration: none;
+  background-color: $primary-color;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 111px;
+  }
+
+  .page-header__nav {
+    width: 660px;
+  }
+
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 37px;
+  }
+
+  .page-header__toggle {
+    top: 44px;
+  }
+
+  .page-header__main-nav {
+    width: 660px;
+    top: 112px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .page-header__logo {
+    padding: 27px 0 36px 0;
+    border-bottom: none;
+  }
+
+  .page-header__main-nav {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .page-header__main-nav-link {
+    padding-top: 38px;
+    padding-left: 80px;
+    padding-right: 0;
+
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+

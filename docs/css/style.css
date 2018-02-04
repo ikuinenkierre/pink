@@ -1051,7 +1051,8 @@ img {
     width: 79px;
     height: 64px;
     top: 71px;
-    left: 444px;
+    left: 50%;
+    margin-left: -39px;
     background-image: url("../img/quotes-icon.svg");
     background-repeat: no-repeat; }
   .reviews__arrow {

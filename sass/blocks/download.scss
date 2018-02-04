@@ -2,16 +2,16 @@
   margin-top: -69px;
 
   color: $secondary-color;
-  background-color: $primary-color;
+  background-color: $primary-color; 
+  background-image: url("../img/download-bg-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 63%;
 }
 
 .download__wrapper {
   position: relative;
   padding-top: 491px;
-
-  background-image: url("../img/download-bg-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .download__wrapper::after {
@@ -49,6 +49,7 @@
   margin-left: 37px;
 
   background-position: bottom center;
+  background-repeat: no-repeat;
 }
 
 .download__icon-button--apple {
@@ -83,12 +84,13 @@
 @media (min-width: $tablet-width) {
   .download {
     margin-top: -111px;
+
+    background-image: url("../img/download-bg-tablet.jpg");
+    background-size: cover;
   }
 
   .download__wrapper {
     padding-top: 204px;
-
-    background-image: url("../img/download-bg-tablet.jpg");
   }
 
   .download__wrapper::after {
@@ -138,10 +140,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .download {
+    background-image: url("../img/download-bg-desktop.jpg");
+  }
+  
   .download__wrapper {
     padding-top: 220px;
-
-    background-image: url("../img/download-bg-desktop.jpg");
   }
 
   .download__wrapper::after {

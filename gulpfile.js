@@ -16,6 +16,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+var build = "docs";
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")

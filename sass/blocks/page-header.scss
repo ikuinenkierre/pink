@@ -56,13 +56,13 @@
   right: 20px;
 
   background-color: transparent;
-  background-image: url(../../img/burger-icon.svg);
+  background-image: url("../img/burger-icon.svg");
   background-repeat: no-repeat;
   border: none;
 }
 
 .page-header__toggle--closed {
-  background-image: url(../../img/close-menu-icon.svg);
+  background-image: url("../img/close-menu-icon.svg");
   width: 24px;
 }
 

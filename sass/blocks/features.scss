@@ -59,7 +59,7 @@
   margin-left: -78px;
   bottom: 0;
 
-  background-image: url(../../img/features-bg.png);
+  background-image: url("../img/features-bg.png");
   background-repeat: no-repeat;
   background-size: 157px 282px;
 }
@@ -185,15 +185,15 @@
   }
   
   .features__item--mood:before {
-    background-image: url(../../img/features-mood-bg.png);
+    background-image: url("../img/features-mood-bg.png");
   }
 
   .features__item--world:before {
-    background-image: url(../../img/features-world-bg.png);
+    background-image: url("../img/features-world-bg.png");
   }
 
   .features__item--friends:before {
-    background-image: url(../../img/features-friends-bg.png);
+    background-image: url("../img/features-friends-bg.png");
   }
 
   .features__item-heading {

@@ -526,12 +526,12 @@ img {
   top: 21px;
   right: 20px;
   background-color: transparent;
-  background-image: url(../../img/burger-icon.svg);
+  background-image: url("../img/burger-icon.svg");
   background-repeat: no-repeat;
   border: none; }
 
 .page-header__toggle--closed {
-  background-image: url(../../img/close-menu-icon.svg);
+  background-image: url("../img/close-menu-icon.svg");
   width: 24px; }
 
 .page-header__main-nav-link {
@@ -614,7 +614,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: url(../../img/downloads-hand-mobile.png);
+  background-image: url("../img/downloads-hand-mobile.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 320px 286px; }
@@ -672,7 +672,7 @@ img {
     width: 660px;
     height: 545px;
     left: 0;
-    background-image: url(../../img/downloads-hand-tablet.png);
+    background-image: url("../img/downloads-hand-tablet.png");
     background-size: 660px 545px; }
   .download__buttons-wrapper {
     position: relative;
@@ -699,12 +699,12 @@ img {
 @media (min-width: 960px) {
   .download__wrapper {
     padding-top: 220px;
-    background-image: url(../../img/download-bg-desktop.jpg); }
+    background-image: url("../img/download-bg-desktop.jpg"); }
   .download__wrapper::after {
     width: 1050px;
     height: 645px;
     left: 26px;
-    background-image: url(../../img/downloads-hand.png);
+    background-image: url("../img/downloads-hand.png");
     background-size: 1050px 645px; }
   .download__slogan {
     padding-left: 31px;
@@ -770,7 +770,7 @@ img {
   left: 50%;
   margin-left: -78px;
   bottom: 0;
-  background-image: url(../../img/features-bg.png);
+  background-image: url("../img/features-bg.png");
   background-repeat: no-repeat;
   background-size: 157px 282px; }
 
@@ -858,11 +858,11 @@ img {
     background-position: center center;
     z-index: 2; }
   .features__item--mood:before {
-    background-image: url(../../img/features-mood-bg.png); }
+    background-image: url("../img/features-mood-bg.png"); }
   .features__item--world:before {
-    background-image: url(../../img/features-world-bg.png); }
+    background-image: url("../img/features-world-bg.png"); }
   .features__item--friends:before {
-    background-image: url(../../img/features-friends-bg.png); }
+    background-image: url("../img/features-friends-bg.png"); }
   .features__item-heading {
     margin-bottom: 24px;
     font-size: 30px;
@@ -894,7 +894,7 @@ img {
     line-height: 300px;
     color: #d22856;
     text-align: center;
-    background-image: url(../../img/clock-tablet.svg);
+    background-image: url("../img/clock-tablet.svg");
     background-repeat: no-repeat;
     background-position: center center; }
   .effects__title {
@@ -926,7 +926,7 @@ img {
     left: 10px;
     font-size: 120px;
     line-height: 378px;
-    background-image: url(../../img/clock-desktop.svg); }
+    background-image: url("../img/clock-desktop.svg"); }
   .effects__title {
     margin-bottom: 21px; }
   .effects__desc {
@@ -1036,7 +1036,7 @@ img {
     height: 64px;
     top: 71px;
     left: 444px;
-    background-image: url(../../img/quotes-icon.svg);
+    background-image: url("../img/quotes-icon.svg");
     background-repeat: no-repeat; }
   .reviews__arrow {
     position: absolute;
@@ -1215,12 +1215,12 @@ img {
   border: 0; }
 
 .options__table-cell--yes {
-  background-image: url(../../img/yes-icon.svg);
+  background-image: url("../img/yes-icon.svg");
   background-repeat: no-repeat;
   background-position: top 20px right 20px; }
 
 .options__table-cell--no {
-  background-image: url(../../img/no-icon.svg);
+  background-image: url("../img/no-icon.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 20px; }
 
@@ -1297,7 +1297,7 @@ img {
 .map {
   position: relative;
   height: 200px;
-  background-image: url(../../img/map.jpg);
+  background-image: url("../img/map.jpg");
   background-position: center -445px;
   background-repeat: no-repeat; }
 

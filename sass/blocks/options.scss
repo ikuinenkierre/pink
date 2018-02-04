@@ -140,13 +140,13 @@
 }
 
 .options__table-cell--yes {
-  background-image: url(../../img/yes-icon.svg);
+  background-image: url("../img/yes-icon.svg");
   background-repeat: no-repeat;
   background-position: top 20px right 20px;
 }
 
 .options__table-cell--no {
-  background-image: url(../../img/no-icon.svg);
+  background-image: url("../img/no-icon.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 20px;
 }

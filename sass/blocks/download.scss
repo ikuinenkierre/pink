@@ -22,7 +22,7 @@
   left: 0;
   bottom: 0;
   
-  background-image: url(../../img/downloads-hand-mobile.png);
+  background-image: url("../img/downloads-hand-mobile.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 320px 286px;
@@ -96,7 +96,7 @@
     height: 545px;
     left: 0;
 
-    background-image: url(../../img/downloads-hand-tablet.png);
+    background-image: url("../img/downloads-hand-tablet.png");
     background-size: 660px 545px;
   }
 
@@ -140,7 +140,7 @@
   .download__wrapper {
     padding-top: 220px;
 
-    background-image: url(../../img/download-bg-desktop.jpg);
+    background-image: url("../img/download-bg-desktop.jpg");
   }
 
   .download__wrapper::after {
@@ -148,7 +148,7 @@
     height: 645px;
     left: 26px;
 
-    background-image: url(../../img/downloads-hand.png);
+    background-image: url("../img/downloads-hand.png");
     background-size: 1050px 645px;
   }
 

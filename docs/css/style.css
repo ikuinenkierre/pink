@@ -490,7 +490,8 @@ img {
   position: relative;
   height: 69px;
   z-index: 10;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: rgba(29, 38, 49, 0.3); }
 
 .page-header__nav {
   -webkit-box-sizing: border-box;
@@ -501,8 +502,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  padding: 22px 20px 14px 20px;
-  background-color: rgba(29, 38, 49, 0.3); }
+  padding: 22px 20px 14px 20px; }
 
 .page-header__main-nav {
   display: none;

@@ -451,6 +451,13 @@ img {
   border: 3px solid #ffffff;
   border-radius: 30px; }
 
+.btn:hover {
+  color: #d22856;
+  background-color: #ffffff; }
+
+.btn:active {
+  color: rgba(210, 40, 86, 0.3); }
+
 @media (min-width: 960px) {
   .btn {
     font-size: 21px; } }
@@ -468,6 +475,9 @@ img {
   vertical-align: middle;
   border-radius: 50%;
   background-color: rgba(40, 54, 69, 0.3); }
+
+.slider__toggle:hover {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 @media (min-width: 960px) {
   .slider {
@@ -592,6 +602,11 @@ img {
     text-transform: none;
     background-color: transparent;
     border: none; }
+  .page-header__main-nav-link:hover {
+    color: #d22856; }
+  .page-header__main-nav-link:active {
+    color: #ffffff;
+    opacity: .3; }
   .page-header__toggle {
     display: none; } }
 
@@ -613,7 +628,7 @@ img {
   height: 286px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 271px;
   background-image: url("../img/downloads-hand-mobile.png");
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -672,6 +687,7 @@ img {
     width: 660px;
     height: 545px;
     left: 0;
+    bottom: 0;
     background-image: url("../img/downloads-hand-tablet.png");
     background-size: 660px 545px; }
   .download__buttons-wrapper {
@@ -1363,7 +1379,17 @@ img {
   margin-bottom: 3px; }
 
 .contacts__item--email .contacts__value {
-  margin-bottom: 24px; }
+  display: block;
+  margin-bottom: 24px;
+  text-decoration: none; }
+
+.contacts__item--email .contacts__value:hover {
+  color: #283645;
+  text-decoration: underline; }
+
+.contacts__item--email .contacts__value:active {
+  opacity: .3;
+  text-decoration: none; }
 
 .contacts__item--address .contacts__name {
   margin-bottom: 2px; }
@@ -1476,6 +1502,10 @@ img {
     padding-left: 13px;
     border-radius: 50%;
     border: 3px solid #e9ebec; }
+  .page-footer__social-link:hover {
+    border-color: #283645; }
+  .page-footer__social-link:active {
+    opacity: .3; }
   .page-footer__social-link--facebook {
     padding-top: 11px;
     padding-left: 16px; }
@@ -1500,7 +1530,11 @@ img {
     padding-right: 15px; }
   .page-footer__copyright-icon {
     margin-top: 12px;
-    fill: #d22856; } }
+    fill: #d22856; }
+  .page-footer__copyright-icon:hover {
+    fill: #283645; }
+  .page-footer__copyright-icon:active {
+    opacity: .3; } }
 
 @media (min-width: 960px) {
   .page-footer__logo {

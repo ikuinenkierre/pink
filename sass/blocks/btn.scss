@@ -12,6 +12,15 @@
   border-radius: 30px;
 }
 
+.btn:hover {
+  color: #d22856;
+  background-color: $secondary-color;
+}
+
+.btn:active {
+  color: rgba(210, 40, 86, .3);
+}
+
 @media (min-width: $desktop-width) {
   .btn {
     font-size: 21px;

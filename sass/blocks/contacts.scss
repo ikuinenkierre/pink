@@ -43,7 +43,20 @@
 }
 
 .contacts__item--email .contacts__value {
+  display: block;
   margin-bottom: 24px;
+
+  text-decoration: none;
+}
+
+.contacts__item--email .contacts__value:hover {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.contacts__item--email .contacts__value:active {
+  opacity: .3;
+  text-decoration: none;
 }
 
 .contacts__item--address .contacts__name {

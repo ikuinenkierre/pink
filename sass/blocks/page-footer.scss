@@ -43,6 +43,14 @@
     border: 3px solid #e9ebec;
   }
 
+  .page-footer__social-link:hover {
+    border-color: $primary-color;
+  }
+
+  .page-footer__social-link:active {
+    opacity: .3;
+  }
+
   .page-footer__social-link--facebook {
     padding-top: 11px;
     padding-left: 16px;
@@ -77,6 +85,14 @@
   .page-footer__copyright-icon {
     margin-top: 12px;
     fill: #d22856;
+  }
+
+  .page-footer__copyright-icon:hover {
+    fill: $primary-color;
+  }
+
+  .page-footer__copyright-icon:active {
+    opacity: .3;
   }
 }
 

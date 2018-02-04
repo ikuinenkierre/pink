@@ -139,6 +139,15 @@
     border: none;
   }
 
+  .page-header__main-nav-link:hover {
+    color: #d22856;
+  }
+
+  .page-header__main-nav-link:active {
+    color: $secondary-color;
+    opacity: .3;
+  }
+
   .page-header__toggle {
     display: none;
   }

@@ -46,12 +46,6 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest(build + "/img"));
-}); 
-
-gulp.task("webp", function () {
-  return gulp.src("img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(build + "/img"));
 });
 
 gulp.task("sprite", function () {
@@ -104,5 +98,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "js", "sprite", "html", done);
 });

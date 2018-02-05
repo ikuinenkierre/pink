@@ -1285,9 +1285,6 @@ img {
     display: none; } }
 
 @media (min-width: 960px) {
-  .options::before {
-    top: -7vw;
-    border-bottom-width: 7vw; }
   .options__wrapper {
     padding-top: 74px;
     padding-bottom: 94px; }
